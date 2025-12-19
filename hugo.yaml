@@ -89,15 +89,13 @@ languages:
         image: /images/my.jpg
         title: "About Me"
         content: |-
-          I am a **Full-Stack Robotics Engineer** capable of building entire autonomous systems from scratch. 
-          My strength lies in **system architecture design** (ROS2, FSM, Database) and **advanced problem solving** (Synthetic Data, Multi-robot coordination).
-          
-          I bridge the gap between hardware control, AI perception, and software services to create practical, working robots.
+          I am a **Full-Stack Robotics Engineer** capable of building complete autonomous systems from system design to AI implementation.
+          I bridge the gap between hardware control, AI perception, and software services to create robots that work in the real world, not just in labs.
         skills:
           enable: true
           title: "Core Technologies:"
           items:
-            - "ROS 2 (Foxy/Humble)"
+            - "ROS 2 (Humble/Jazzy)"
             - "Python & C++"
             - "Nav2 & Manipulation"
             - "Computer Vision (YOLO/OpenCV)"
@@ -112,7 +110,7 @@ languages:
         title: "Key Projects"
         items:
           - title: "Shopee: Robot Shopping System"
-            content: "A multi-robot autonomous shopping system. Robots navigate shelves, pick items, and deliver them. Features ROS2 architecture, FSM-based coordination, and central server management."
+            content: "A multi-robot autonomous shopping system where robots navigate shelves, pick items, and deliver them. Features ROS2 architecture, FSM-based coordination, and central server management."
             image: /images/projects/shopee_banner.jpg
             badges:
               - "ROS 2"
@@ -123,10 +121,20 @@ languages:
                 url: https://github.com/jinhyuk2me/Shopee
 
           - title: "Roomie: Hotel Delivery Robot"
-            content: "Autonomous room service robot capable of riding elevators and precise item delivery. Integrated with guests/staff GUIs and an IoT-controlled drawer system."
+            content: |
+              **[Overview]** An autonomous room service robot capable of inter-floor navigation and precise delivery. Beyond simple navigation, we implemented elevator button manipulation using a robot arm and IoT drawer control to complete a practical service scenario.
+              **[Key Features]**
+              • **Inter-floor Movement**: Direct elevator button manipulation via robot arm control for seamless floor transitions.
+              • **Vision Recognition**: YOLOv8n-based detection of static/dynamic obstacles and transparent glass doors to prevent collisions.
+              • **Integrated Control**: Admin monitoring system and customer interaction robot GUI.
+              **[Technical Challenges & Solutions]**
+              • **Glass Door Detection**: Overcame LiDAR's limitation of passing through glass by training YOLO with a 'glass door' class for vision-based open/close detection.
+              • **Button Misclassification**: Improved accuracy from 5% to **95%** by switching from YOLO-only to a **YOLO(detection) + CNN(classification)** two-stage pipeline.
             image: /images/projects/roomie_banner.png
             badges:
               - "ROS 2"
+              - "YOLOv8"
+              - "Robot Arm"
               - "IoT (ESP32)"
               - "PyQt"
             links:
@@ -134,18 +142,34 @@ languages:
                 url: https://github.com/jinhyuk2me/Roomie
 
           - title: "FALCON: Airport Safety AI"
-            content: "Real-time bird strike and FOD detection system using Synthetic Data (Unity/Blender) to overcome data scarcity. Features 3D coordinate mapping and risk assessment."
+            content: |
+              **[Overview]** A real-time bird strike and FOD detection system. Leveraged synthetic data to overcome the challenge of obtaining real airport environment data.
+              **[Key Features]**
+              • **Synthetic Data Pipeline**: Precisely replicated airport environments in Blender/Unity to generate training data.
+              • **Risk Assessment**: Real-time collision risk calculation via triangulation of bird flock and aircraft position/velocity.
+              • **Intelligent Control**: LLM/STT/TTS-based pilot voice Q&A and TCN-based ground crew hand signal recognition.
+              **[Technical Challenges & Solutions]**
+              • **Sim2Real Domain Gap**: Models trained on real airport photos showed poor recognition in miniature environments. Solved by 3D scanning (Polycam) the miniature model, implementing it in virtual environment, and training with synthetic data using lighting/texture randomization, achieving **mAP 0.930**.
             image: /images/projects/falcon_banner.png
             badges:
               - "AI/CV"
+              - "Synthetic Data"
               - "Unity/Blender"
+              - "LLM"
               - "YOLOv8"
             links:
               - icon: fab fa-github
                 url: https://github.com/jinhyuk2me/FALCON
 
           - title: "Bikecast: Demand Forecasting"
-            content: "Data-driven demand forecasting and station recommendation system for public bicycles using XGBoost. Analyzed weather, transit, and spatial data."
+            content: |
+              **[Overview]** A system that analyzes 44 million bike-sharing trip records to predict real-time demand and recommend optimal station locations.
+              **[Key Features]**
+              • **Real-time Prediction**: XGBoost-based short-term demand forecasting combining weather API (temperature/precipitation) with historical data.
+              • **Location Analysis**: Long-term installation location recommendations reflecting geographical factors like elevation, slope, transit hubs, and commercial districts.
+              **[Technical Challenges & Solutions]**
+              • **Large-scale Data Processing Delay**: Queries on 44M records took hours; reduced to minutes/seconds by analyzing query patterns and applying proper **indexing** strategies.
+              • **High-demand Zone Prediction Failure**: Addressed performance degradation from data distribution imbalance by applying **3-Stage separated learning** per demand segment, achieving **R²=0.761**.
             image: /images/projects/bikecast_banner.png
             badges:
               - "Data Analysis"
@@ -156,7 +180,14 @@ languages:
                 url: https://github.com/jinhyuk2me/Bikecast
 
           - title: "DUST: Smart Logistics Control"
-            content: "IoT-based logistics control platform coordinating AGVs, conveyors, and gates. Designed a centralized server with a robust FSM and custom communication protocols."
+            content: |
+              **[Overview]** An IoT logistics control platform that integrates multiple AGVs (Automated Guided Vehicles), conveyor belts, and gates.
+              **[Key Features]**
+              • **Integrated Control**: FSM (Finite State Machine)-based organic collaboration scenario control between AGVs and facilities.
+              • **Custom Communication**: Optimized various communication methods (TCP/IP, Serial, REST API) according to device characteristics.
+              **[Technical Challenges & Solutions]**
+              • **Control Latency**: AGV navigation was unstable due to JSON parsing overhead; switched to **binary-based custom protocol** to minimize message size and improve response speed by **3x**.
+              • **Navigation Instability**: Discovered PWM output spikes during RFID tag recognition due to computational load; introduced timing control technique to temporarily hold PID control before recognition, securing navigation stability.
             image: /images/projects/dust_banner.png
             badges:
               - "IoT"
@@ -185,7 +216,7 @@ languages:
         enable: true
         title: "Education"
         items:
-          - title: "ROS2 & AI Autonomous Robot Course"
+          - title: "ROS2 & AI Autonomous Robot Bootcamp"
             school:
               name: "Addinedu IT Academy"
               icon: "/images/addinedu.webp"
@@ -277,15 +308,13 @@ languages:
         image: /images/my.jpg
         title: "About Me"
         content: |-
-          저는 바닥부터 전체 시스템을 쌓아올릴 수 있는 **풀스택 로보틱스 엔지니어**입니다.
-          특히 **시스템 아키텍처 설계** (ROS2, FSM, DB)와 **고난이도 문제 해결** (합성 데이터, 멀티 로봇 관제)에 강점이 있습니다.
-
+          저는 시스템 설계부터 AI까지 전체 시스템을 쌓아올릴 수 있는 **풀스택 로보틱스 엔지니어**입니다.
           하드웨어 제어와 AI 인지, 그리고 소프트웨어 서비스를 연결하여, 실험실이 아닌 현실에서 작동하는 로봇을 만듭니다.
         skills:
           enable: true
           title: "핵심 기술:"
           items:
-            - "ROS 2 (Foxy/Humble)"
+            - "ROS 2 (Humble/Jazzy)"
             - "Python & C++"
             - "Nav2 & Manipulation"
             - "Computer Vision (YOLO/OpenCV)"
@@ -311,10 +340,20 @@ languages:
                 url: https://github.com/jinhyuk2me/Shopee
 
           - title: "Roomie: 호텔 배송 로봇"
-            content: "엘리베이터 탑승과 정밀한 물품 배송이 가능한 자율주행 룸서비스 로봇입니다. 고객/직원용 GUI 및 IoT 서랍 제어 시스템과 연동됩니다."
+            content: |
+              **[개요]** 층간 이동과 정밀 배송이 가능한 자율주행 룸서비스 로봇입니다. 단순 주행을 넘어, 로봇팔을 이용한 엘리베이터 버튼 조작 및 IoT 서랍 제어 시스템을 구현하여 실질적인 서비스 시나리오를 완성했습니다.
+              **[핵심 기능]**
+              • **층간 이동**: 로봇팔 제어를 통해 엘리베이터 버튼을 직접 조작하여 자유로운 층간 이동 구현.
+              • **비전 인식**: YOLOv8n 기반으로 정적/동적 장애물뿐만 아니라, 투명한 유리문까지 학습시켜 충돌 방지.
+              • **통합 관제**: 관리자용 모니터링 시스템 및 고객 상호작용을 위한 로봇 GUI 제공.
+              **[기술적 도전 및 해결]**
+              • **투명 유리문 미인식 문제**: LiDAR가 유리를 투과하는 한계를 극복하기 위해, YOLO 모델에 '유리문' 클래스를 추가 학습시켜 비전 기반으로 개폐 여부를 탐지, 충돌 문제를 원천 차단했습니다.
+              • **엘리베이터 버튼 오인식**: YOLO 단독 사용 시 다량의 버튼 클래스로 인해 정확도가 5%에 불과했으나, **YOLO(탐지) + CNN(분류)** 2단계 파이프라인으로 구조를 변경하여 정확도를 **95%**까지 향상시켰습니다.
             image: /images/projects/roomie_banner.png
             badges:
               - "ROS 2"
+              - "YOLOv8"
+              - "Robot Arm"
               - "IoT (ESP32)"
               - "PyQt"
             links:
@@ -322,18 +361,34 @@ languages:
                 url: https://github.com/jinhyuk2me/Roomie
 
           - title: "FALCON: 공항 안전 AI"
-            content: "실시간 조류 충돌(Bird Strike) 및 FOD 탐지 시스템입니다. 데이터 부족 문제를 해결하기 위해 Unity/Blender 기반 합성 데이터를 활용했으며, 3D 좌표 매핑 및 위험도 평가 기능을 갖췄습니다."
+            content: |
+              **[개요]** 실시간 조류 충돌(Bird Strike) 및 FOD 탐지 시스템입니다. 실제 데이터를 구하기 힘든 공항 환경의 한계를 극복하기 위해 합성 데이터를 적극 활용했습니다.
+              **[핵심 기능]**
+              • **합성 데이터 파이프라인**: Blender/Unity로 공항 환경을 정밀 모사하여 학습용 데이터를 자체 생성.
+              • **위험도 산출**: 조류 군집과 항공기의 위치/속도를 삼각측량하여 실시간 충돌 위험도 계산.
+              • **지능형 관제**: LLM/STT/TTS 기반 조종사 음성 질의응답 및 TCN 기반 지상 유도사 수신호 인식.
+              **[기술적 도전 및 해결]**
+              • **Sim2Real 도메인 갭**: 실제 공항 사진으로 학습한 모델이 축소 모형 환경에서 인식률이 저조했습니다. 이를 해결하기 위해 축소 모형을 3D 스캔(Polycam)하여 가상 환경에 구현하고, 조명/텍스처 랜덤화를 적용한 합성 데이터로 학습시켜 **mAP 0.930**의 높은 성능을 달성했습니다.
             image: /images/projects/falcon_banner.png
             badges:
               - "AI/CV"
+              - "Synthetic Data"
               - "Unity/Blender"
+              - "LLM"
               - "YOLOv8"
             links:
               - icon: fab fa-github
                 url: https://github.com/jinhyuk2me/FALCON
 
-          - title: "Bikecast: 자율주행 수요 예측"
-            content: "공공 자전거(따릉이) 수요 예측 및 거치소 추천 시스템입니다. 날씨, 대중교통, 지리적 데이터를 종합하여 XGBoost 기반 수요 예측 모델을 개발했습니다."
+          - title: "Bikecast: 자전거 수요 예측"
+            content: |
+              **[개요]** 4,400만 건의 따릉이 주행 데이터를 분석하여 실시간 수요를 예측하고 최적의 대여소 설치 위치를 추천하는 시스템입니다.
+              **[핵심 기능]**
+              • **실시간 예측**: 기상청 API(기온/강수량)와 과거 이력을 결합한 XGBoost 기반 단기 수요 예측.
+              • **입지 분석**: 고도, 경사, 환승 거점, 상권 분석 등 지리적 요인을 반영한 장기적 설치 위치 제안.
+              **[기술적 도전 및 해결]**
+              • **대용량 데이터 처리 지연**: 4,400만 건 데이터 조회 시 수 시간이 소요되었으나, 쿼리 패턴을 분석하여 적절한 **인덱싱(Indexing)** 전략을 적용한 결과 조회 시간을 수 분~수십 초 단위로 단축했습니다.
+              • **고수요 구간 예측 실패**: 데이터 분포 불균형으로 인한 성능 저하를 해결하기 위해, 수요 구간을 나누어 **3-Stage 분리 학습**을 적용하여 **R²=0.761**의 준수한 예측 성능을 확보했습니다.
             image: /images/projects/bikecast_banner.png
             badges:
               - "Data Analysis"
@@ -344,7 +399,14 @@ languages:
                 url: https://github.com/jinhyuk2me/Bikecast
 
           - title: "DUST: 스마트 물류 관제"
-            content: "AGV, 컨베이어 벨트, 차단기를 통합 제어하는 IoT 물류 관제 플랫폼입니다. 견고한 FSM과 커스텀 통신 프로토콜을 갖춘 중앙 서버를 설계했습니다."
+            content: |
+              **[개요]** 다수의 AGV(무인운반차)와 컨베이어 벨트, 게이트를 통합 제어하는 IoT 물류 관제 플랫폼입니다.
+              **[핵심 기능]**
+              • **통합 제어**: FSM(유한상태기계) 기반으로 AGV와 설비 간의 유기적인 협업 시나리오 제어.
+              • **커스텀 통신**: TCP/IP, Serial, REST API 등 다양한 통신 방식을 디바이스 특성에 맞게 최적화.
+              **[기술적 도전 및 해결]**
+              • **제어 지연(Latency)**: 초기 JSON 통신 방식의 파싱 부하로 AGV 주행이 불안정했으나, **바이너리 기반 커스텀 프로토콜**로 변경하여 메시지 크기를 최소화하고 응답 속도를 **3배 이상** 향상시켰습니다.
+              • **주행 불안정**: RFID 태그 인식 시점의 연산 부하로 PWM 출력이 튀는 현상을 발견하고, 인식 직전 PID 제어를 일시 홀딩하는 타이밍 제어 기법을 도입하여 주행 안정성을 확보했습니다.
             image: /images/projects/dust_banner.png
             badges:
               - "IoT"
@@ -373,7 +435,7 @@ languages:
         enable: true
         title: "학력"
         items:
-          - title: "ROS2 & AI 자율주행 로봇 과정"
+          - title: "ROS2 & AI 자율주행 로봇 부트캠프"
             school:
               name: "애드인에듀 IT 아카데미"
               icon: "/images/addinedu.webp"
