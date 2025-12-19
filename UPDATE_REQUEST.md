@@ -8,9 +8,9 @@
 ## 🎯 메인 화면 (Hero Section)
 
 ### 한글 버전
-- **Intro**: Robotics & AI Engineer
+- **Intro**: Jinhyuk Jang
 - **Title**: 장진혁
-- **Subtitle**: Jinhyuk Jang
+- **Subtitle**: Robotics & AI Engineer
 - **Content**: 로보틱스는 다양한 공학의 오케스트레이션입니다. 시스템 설계부터 AI, 제어까지 다양한 분야의 경험을 통해 직접 실생활에 적용할 수 있는 로봇 시스템을 만듭니다.
 - **Social Links**: [GitHub, LinkedIn, YouTube]
 
