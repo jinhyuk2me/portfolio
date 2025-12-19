@@ -44,7 +44,7 @@ params:
   title: "Jinhyuk Jang"
   description: "Full-Stack Robotics & AI System Architect"
   favicon: "/fav.png"
-  useBootstrapCDN: false
+  useBootstrapCDN: true
   mathjax: false
   animate: true
 
