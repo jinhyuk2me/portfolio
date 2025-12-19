@@ -102,9 +102,12 @@ params:
         - "ROS 2 (Foxy/Humble)"
         - "Python & C++"
         - "Nav2 & Manipulation"
-        - "Computer Vision (YOLO)"
+        - "Computer Vision (YOLO/OpenCV)"
         - "Deep Learning (PyTorch)"
         - "IoT & Embedded (ESP32)"
+        - "Linux & Docker"
+        - "AWS & MySQL"
+        - "Communication (TCP/REST/Serial)"
 
   # Projects
   projects:
@@ -120,7 +123,7 @@ params:
           - "Multi-Robot"
         links:
           - icon: fab fa-github
-            url: https://github.com/jinhyuk2me
+            url: https://github.com/jinhyuk2me/shopee_ros2
 
       - title: "Roomie: Hotel Delivery Robot"
         content: "Autonomous room service robot capable of riding elevators and precise item delivery. Integrated with guests/staff GUIs and an IoT-controlled drawer system."
@@ -131,7 +134,7 @@ params:
           - "PyQt"
         links:
           - icon: fab fa-github
-            url: https://github.com/jinhyuk2me
+            url: https://github.com/jinhyuk2me/Roomie
 
       - title: "FALCON: Airport Safety AI"
         content: "Real-time bird strike and FOD detection system using Synthetic Data (Unity/Blender) to overcome data scarcity. Features 3D coordinate mapping and risk assessment."
@@ -142,7 +145,7 @@ params:
           - "YOLOv8"
         links:
           - icon: fab fa-github
-            url: https://github.com/jinhyuk2me
+            url: https://github.com/jinhyuk2me/FALCON
 
       - title: "Bikecast: Demand Forecasting"
         content: "Data-driven demand forecasting and station recommendation system for public bicycles using XGBoost. Analyzed weather, transit, and spatial data."
@@ -153,7 +156,7 @@ params:
           - "Pandas"
         links:
           - icon: fab fa-github
-            url: https://github.com/jinhyuk2me
+            url: https://github.com/jinhyuk2me/Bikecast
 
       - title: "DUST: Smart Logistics Control"
         content: "IoT-based logistics control platform coordinating AGVs, conveyors, and gates. Designed a centralized server with a robust FSM and custom communication protocols."
@@ -164,7 +167,7 @@ params:
           - "TCP/IP"
         links:
           - icon: fab fa-github
-            url: https://github.com/jinhyuk2me
+            url: https://github.com/jinhyuk2me/DUST
 
   # Experience
   experience:
@@ -186,20 +189,27 @@ params:
     enable: true
     title: "Education"
     items:
-      - title: "Robotics & AI Training"
+      - title: "ROS2 & AI Autonomous Robot Course"
         school:
-          name: "Addin Edu ROS 9th"
-        date: "2024 - 2025"
+          name: "Addin Edu"
+        date: "2025.02 - 2025.08"
         content: |-
           Intensive training on ROS2, Autonomous Driving, Deep Learning, and Embedded Systems.
           Successfully completed 5 major projects as a Team Lead.
+
+      - title: "School of Electrical Engineering"
+        school:
+          name: "KAIST"
+        date: "2018.03 - 2025.02 (Leave of Absence)"
+        content: |-
+          Undergraduate studies in Electrical Engineering.
 
   # Contact
   contact:
     enable: true
     content: "Open to new opportunities in Robotics and AI."
     btnName: "Email Me"
-    btnLink: "mailto:jinhyukjang@example.com"
+    btnLink: "mailto:jinhyuk2me@gmail.com"
 
   footer:
     recentPosts:
