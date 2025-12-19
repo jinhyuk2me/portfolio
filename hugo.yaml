@@ -191,7 +191,8 @@ params:
     items:
       - title: "ROS2 & AI Autonomous Robot Course"
         school:
-          name: "Addin Edu"
+          name: "Addinedu"
+          icon: "fas fa-robot"
         date: "2025.02 - 2025.08"
         content: |-
           Intensive training on ROS2, Autonomous Driving, Deep Learning, and Embedded Systems.
@@ -200,6 +201,7 @@ params:
       - title: "School of Electrical Engineering"
         school:
           name: "KAIST"
+          icon: "fas fa-graduation-cap"
         date: "2018.03 - 2025.02 (Leave of Absence)"
         content: |-
           Undergraduate studies in Electrical Engineering.
