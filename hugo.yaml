@@ -1,4 +1,4 @@
-baseURL: "https://jinhyuk2me.github.io/jinhyuk-portfolio/"
+baseURL: "https://jinhyuk2me.github.io/portfolio/"
 title: "Jinhyuk Jang Portfolio"
 theme: hugo-profile
 canonifyURLs: true
