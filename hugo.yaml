@@ -81,8 +81,8 @@ params:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/jinhyuk2me
-        # - icon: fab fa-linkedin
-        #   url: https://linkedin.com/in/jinhyukjang
+        - icon: fab fa-linkedin
+          url: https://linkedin.com/in/jinhyuk2me
 
   # About
   about:
@@ -192,7 +192,7 @@ params:
       - title: "ROS2 & AI Autonomous Robot Course"
         school:
           name: "Addinedu"
-          icon: "fas fa-robot"
+          icon: "/images/addinedu.webp"
         date: "2025.02 - 2025.08"
         content: |-
           Intensive training on ROS2, Autonomous Driving, Deep Learning, and Embedded Systems.
@@ -201,7 +201,7 @@ params:
       - title: "School of Electrical Engineering"
         school:
           name: "KAIST"
-          icon: "fas fa-graduation-cap"
+          icon: "/images/kaist.gif"
         date: "2018.03 - 2025.02 (Leave of Absence)"
         content: |-
           Undergraduate studies in Electrical Engineering.
