@@ -283,10 +283,10 @@ languages:
 
       hero:
         enable: true
-        intro: "안녕하세요, 저는"
-        title: "장진혁입니다."
-        subtitle: "Full-Stack Robotics & AI System Architect"
-        content: "하위 레벨의 로봇 제어부터 AI 인지, 그리고 중앙 관제 서버까지. 하나의 완전한 자율주행 시스템을 설계하고 구현합니다."
+        intro: "Control with Perception"
+        title: "로보틱스 AI 엔지니어"
+        subtitle: "장진혁"
+        content: "Combining robot control and AI perception to build autonomous systems that work in the real world."
         image: /images/me.png
         bottomImage:
           enable: true
