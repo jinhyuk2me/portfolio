@@ -89,7 +89,7 @@ languages:
         image: /images/my.jpg
         title: "About Me"
         content: |-
-          I am a **Full-Stack Robotics Engineer** capable of building complete autonomous systems from system design to AI implementation.
+          I am a Full-Stack Robotics Engineer capable of building complete autonomous systems from system design to AI implementation.
           I bridge the gap between hardware control, AI perception, and software services to create robots that work in the real world, not just in labs.
         skills:
           enable: true
@@ -177,11 +177,11 @@ languages:
               - name: "Embedded AI Engineer"
                 date: "2025.10 - "
                 content: |
-                  - Developed **PyroVision**, an early fire detection system using **NXP i.MX8M Plus** NPU.
-                  - Implemented **RGB-IR Sensor Fusion** algorithm to minimize false positives from smoke/fog.
-                  - Optimized **YOLOv8** & **TensorFlow Lite** models for edge inference on embedded devices.
-                  - Conducted advanced research on **Transformer-based Re-ID (TransReID)** and **MOT (ByteTrack/OC-SORT)** algorithms using **YOLOv11**.
-                  - Built real-time monitoring infrastructure using **TCP/IP**, **GStreamer**, and **PyQt6**.
+                  - Developed PyroVision, an early fire detection system using NXP i.MX8M Plus NPU.
+                  - Implemented RGB-IR Sensor Fusion algorithm to minimize false positives from smoke/fog.
+                  - Optimized YOLOv8 & TensorFlow Lite models for edge inference on embedded devices.
+                  - Conducted advanced research on Transformer-based Re-ID (TransReID) and MOT (ByteTrack/OC-SORT) algorithms using YOLOv11.
+                  - Built real-time monitoring infrastructure using TCP/IP, GStreamer, and PyQt6.
 
       education:
         enable: true
@@ -254,9 +254,9 @@ languages:
 
       hero:
         enable: true
-        intro: "Control with Perception"
-        title: "로보틱스 AI 엔지니어"
-        subtitle: "장진혁"
+        intro: "Robotics & AI Engineer"
+        title: "장진혁"
+        subtitle: "Jinhyuk Jang"
         content: "Combining robot control and AI perception to build autonomous systems that work in the real world."
         image: /images/me.png
         bottomImage:
@@ -279,7 +279,7 @@ languages:
         image: /images/my.jpg
         title: "About Me"
         content: |-
-          저는 시스템 설계부터 AI까지 전체 시스템을 쌓아올릴 수 있는 **풀스택 로보틱스 엔지니어**입니다.
+          저는 시스템 설계부터 AI까지 전체 시스템을 쌓아올릴 수 있는 풀스택 로보틱스 엔지니어입니다.
           하드웨어 제어와 AI 인지, 그리고 소프트웨어 서비스를 연결하여, 실험실이 아닌 현실에서 작동하는 로봇을 만듭니다.
         skills:
           enable: true
@@ -367,11 +367,11 @@ languages:
               - name: "임베디드 AI 엔지니어"
                 date: "2025.10 - "
                 content: |
-                  - **NXP i.MX8M Plus** NPU 기반 초기 화재 감지 시스템 **PyroVision** 개발.
-                  - 오탐지 최소화를 위한 **RGB-IR 센서 퓨전** 알고리즘 구현.
-                  - 엣지 디바이스 추론을 위한 **YOLOv8** 및 **TensorFlow Lite** 모델 최적화.
-                  - **YOLOv11**과 **Transformer(TransReID)**를 활용한 **고성능 다중 객체 추적(MOT) 및 재식별(Re-ID)** 시스템 선행 연구 수행.
-                  - **TCP/IP**, **GStreamer**, **PyQt6**를 활용한 실시간 모니터링 인프라 구축.
+                  - NXP i.MX8M Plus NPU 기반 초기 화재 감지 시스템 PyroVision 개발.
+                  - 오탐지 최소화를 위한 RGB-IR 센서 퓨전 알고리즘 구현.
+                  - 엣지 디바이스 추론을 위한 YOLOv8 및 TensorFlow Lite 모델 최적화.
+                  - YOLOv11과 Transformer(TransReID)를 활용한 고성능 다중 객체 추적(MOT) 및 재식별(Re-ID) 시스템 선행 연구 수행.
+                  - TCP/IP, GStreamer, PyQt6를 활용한 실시간 모니터링 인프라 구축.
 
       education:
         enable: true
