@@ -12,16 +12,18 @@
 - **Title**: 장진혁
 - **Subtitle**: Jinhyuk Jang
 - **Content**: 로보틱스는 다양한 공학의 오케스트레이션입니다. 시스템 설계부터 AI, 제어까지 다양한 분야의 경험을 통해 직접 실생활에 적용할 수 있는 로봇 시스템을 만듭니다.
+- **Social Links**: [GitHub, LinkedIn, YouTube]
 
 ### 영문 버전
 - **Intro**: Hello, I am
 - **Title**: Jinhyuk Jang.
 - **Subtitle**: Robotics & AI Engineer
-- **Content**: Combining robot control and AI perception to build autonomous systems that work in the real world.
+- **Content**: I build complete autonomous systems—from low-level robot control to AI perception and central management servers.
+- **Social Links**: [GitHub, LinkedIn, YouTube]
 
 ---
 
-## 🚀 프로젝트 (Projects)
+## 💻 프로젝트 (Projects)
 
 ### Shopee: 로봇 쇼핑 시스템
 - **제목**: Shopee: 로봇 쇼핑 시스템
@@ -48,15 +50,22 @@
 - **제목**: Bikecast: 자전거 수요 예측
 - **설명**: 4,400만 건 따릉이 데이터 기반 XGBoost 수요 예측 시스템입니다. 인덱싱으로 쿼리 성능을 수 시간에서 수십 초로 단축했습니다. 3-Stage 학습으로 R²=0.761 달성했습니다.
 - **이미지 경로**: /images/projects/bikecast_banner.png
-- **사용 기술**: [Data Analysis, XGBoost, Pandas, MySQL, AWS]
+- **사용 기술**: [Data Analysis, XGBoost, Pandas]
 - **GitHub 링크**: https://github.com/jinhyuk2me/Bikecast
 
 ### DUST: 스마트 물류 관제
 - **제목**: DUST: 스마트 물류 관제
 - **설명**: AGV, 컨베이어, 게이트 통합 제어 IoT 플랫폼입니다. 바이너리 프로토콜로 응답 속도 3배 향상했습니다. RFID 인식 시 타이밍 제어로 주행 안정성을 확보했습니다.
 - **이미지 경로**: /images/projects/dust_banner.png
-- **사용 기술**: [IoT, FSM, TCP/IP, PyQt6, MySQL]
+- **사용 기술**: [IoT, FSM, TCP/IP]
 - **GitHub 링크**: https://github.com/jinhyuk2me/DUST
+
+### Minecraft with ROS2 & SLAM
+- **제목**: Minecraft with ROS2 & SLAM
+- **설명**: 마인크래프트와 ROS 2를 연동한 로보틱스 실험 프로젝트입니다. micro-ROS를 통해 물리 조이스틱으로 게임 캐릭터를 제어하고, 게임 내에서 Cartographer를 활용해 실시간 SLAM 지도 작성을 구현했습니다.
+- **이미지 경로**: /images/projects/minecraft_banner.png
+- **사용 기술**: [ROS 2, micro-ROS, SLAM, ESP32, Minecraft]
+- **GitHub 링크**: https://github.com/jinhyuk2me/Minecraft_with_ROS2
 
 ---
 
