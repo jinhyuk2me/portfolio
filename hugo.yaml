@@ -1,8 +1,10 @@
 baseURL: "https://jinhyuk2me.github.io/jinhyuk-portfolio/"
-languageCode: "ko-kr"
 title: "Jinhyuk Jang Portfolio"
 theme: hugo-profile
 canonifyURLs: true
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
 
 outputs:
   home:
@@ -23,199 +25,375 @@ markup:
     renderer:
       unsafe: true
 
-# Menus:
-#   main:
-    # Manual menu items are removed to avoid duplication with theme's auto-generated sections
-
-
-params:
-  title: "Jinhyuk Jang"
-  description: "Full-Stack Robotics & AI System Architect"
-  favicon: "/fav.png"
-  useBootstrapCDN: true
-  mathjax: false
-  animate: true
-
-  theme:
-    # defaultTheme: "dark"
-
-  font:
-    fontSize: 1rem
-    fontWeight: 400
-    lineHeight: 1.5
-    textAlign: left
-
-  navbar:
-    align: ms-auto
-    brandName: "Jinhyuk's Portfolio"
-    disableSearch: true
-    stickyNavBar:
-      enable : true
-      showOnScrollUp : true
-    enableSeparator: false
-    menus:
-      disableAbout: false
-      disableExperience: false
-      disableEducation: false
-      disableProjects: false
-      disableAchievements: true
-      disableContact: false
-
-  # Hero
-  hero:
-    enable: true
-    intro: "Hello, I am"
-    title: "Jinhyuk Jang."
-    subtitle: "Full-Stack Robotics & AI System Architect"
-    content: "I design and build complete autonomous systems—from low-level robot control to AI perception and central management servers."
-    image: /images/me.png
-    bottomImage:
-      enable: true
-    button:
-      enable: true
-      name: "View Projects"
-      url: "#projects"
-      download: false
-      newPage: false
-    socialLinks:
-      fontAwesomeIcons:
-        - icon: fab fa-github
-          url: https://github.com/jinhyuk2me
-        - icon: fab fa-linkedin
-          url: https://linkedin.com/in/jinhyuk2me
-
-  # About
-  about:
-    enable: true
-    title: "About Me"
-    # image: "/images/me.png"
-    content: |-
-      I am a **Full-Stack Robotics Engineer** capable of building entire autonomous systems from scratch. 
-      My strength lies in **system architecture design** (ROS2, FSM, Database) and **advanced problem solving** (Synthetic Data, Multi-robot coordination).
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    params:
+      title: "Jinhyuk Jang"
+      description: "Full-Stack Robotics & AI System Architect"
+      favicon: "/fav.png"
+      useBootstrapCDN: true
+      mathjax: false
+      animate: true
       
-      I bridge the gap between hardware control, AI perception, and software services to create practical, working robots.
+      theme:
+        # defaultTheme: "dark"
+      
+      font:
+        fontSize: 1rem
+        fontWeight: 400
+        lineHeight: 1.5
+        textAlign: left
 
-    skills:
-      enable: true
-      title: "Core Technologies:"
-      items:
-        - "ROS 2 (Foxy/Humble)"
-        - "Python & C++"
-        - "Nav2 & Manipulation"
-        - "Computer Vision (YOLO/OpenCV)"
-        - "Deep Learning (PyTorch)"
-        - "IoT & Embedded (ESP32)"
-        - "Linux & Docker"
-        - "AWS & MySQL"
-        - "Communication (TCP/REST/Serial)"
+      navbar:
+        align: ms-auto
+        brandName: "Jinhyuk's Portfolio"
+        disableSearch: true
+        stickyNavBar:
+          enable : true
+          showOnScrollUp : true
+        enableSeparator: false
+        menus:
+          disableAbout: false
+          disableExperience: false
+          disableEducation: false
+          disableProjects: false
+          disableAchievements: true
+          disableContact: false
 
-  # Projects
-  projects:
-    enable: true
-    title: "Key Projects"
-    items:
-      - title: "Shopee: Robot Shopping System"
-        content: "A multi-robot autonomous shopping system. Robots navigate shelves, pick items, and deliver them. Features ROS2 architecture, FSM-based coordination, and central server management."
-        image: /images/projects/shopee_banner.jpg
-        badges:
-          - "ROS 2"
-          - "Nav2"
-          - "Multi-Robot"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/jinhyuk2me/Shopee
+      hero:
+        enable: true
+        intro: "Hello, I am"
+        title: "Jinhyuk Jang."
+        subtitle: "Full-Stack Robotics & AI System Architect"
+        content: "I design and build complete autonomous systems—from low-level robot control to AI perception and central management servers."
+        image: /images/me.png
+        bottomImage:
+          enable: true
+        button:
+          enable: true
+          name: "View Projects"
+          url: "#projects"
+          download: false
+          newPage: false
+        socialLinks:
+          fontAwesomeIcons:
+            - icon: fab fa-github
+              url: https://github.com/jinhyuk2me
+            - icon: fab fa-linkedin
+              url: https://linkedin.com/in/jinhyuk2me
 
-      - title: "Roomie: Hotel Delivery Robot"
-        content: "Autonomous room service robot capable of riding elevators and precise item delivery. Integrated with guests/staff GUIs and an IoT-controlled drawer system."
-        image: /images/projects/roomie_banner.png
-        badges:
-          - "ROS 2"
-          - "IoT (ESP32)"
-          - "PyQt"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/jinhyuk2me/Roomie
-
-      - title: "FALCON: Airport Safety AI"
-        content: "Real-time bird strike and FOD detection system using Synthetic Data (Unity/Blender) to overcome data scarcity. Features 3D coordinate mapping and risk assessment."
-        image: /images/projects/falcon_banner.png
-        badges:
-          - "AI/CV"
-          - "Unity/Blender"
-          - "YOLOv8"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/jinhyuk2me/FALCON
-
-      - title: "Bikecast: Demand Forecasting"
-        content: "Data-driven demand forecasting and station recommendation system for public bicycles using XGBoost. Analyzed weather, transit, and spatial data."
-        image: /images/projects/bikecast_banner.png
-        badges:
-          - "Data Analysis"
-          - "XGBoost"
-          - "Pandas"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/jinhyuk2me/Bikecast
-
-      - title: "DUST: Smart Logistics Control"
-        content: "IoT-based logistics control platform coordinating AGVs, conveyors, and gates. Designed a centralized server with a robust FSM and custom communication protocols."
-        image: /images/projects/dust_banner.png
-        badges:
-          - "IoT"
-          - "FSM"
-          - "TCP/IP"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/jinhyuk2me/DUST
-
-  # Experience
-  experience:
-    enable: true
-    title: "Work Experience"
-    items:
-      - company: "LK ROBOTICS"
-        jobs:
-          - name: "Embedded AI Engineer"
-            date: "2025.10 - 2025.12"
-            content: |
-              - Developed **PyroVision**, an early fire detection system using **NXP i.MX8M Plus** NPU.
-              - Implemented **RGB-IR Sensor Fusion** algorithm to minimize false positives from smoke/fog.
-              - Optimized **YOLOv8** & **TensorFlow Lite** models for edge inference on embedded devices.
-              - Built real-time monitoring infrastructure using **TCP/IP**, **GStreamer**, and **PyQt6**.
-
-  # Education
-  education:
-    enable: true
-    title: "Education"
-    items:
-      - title: "ROS2 & AI Autonomous Robot Course"
-        school:
-          name: "Addinedu"
-          icon: "/images/addinedu.webp"
-        date: "2025.02 - 2025.08"
+      about:
+        enable: true
+        title: "About Me"
         content: |-
-          Intensive training on ROS2, Autonomous Driving, Deep Learning, and Embedded Systems.
-          Successfully completed 5 major projects as a Team Lead.
+          I am a **Full-Stack Robotics Engineer** capable of building entire autonomous systems from scratch. 
+          My strength lies in **system architecture design** (ROS2, FSM, Database) and **advanced problem solving** (Synthetic Data, Multi-robot coordination).
+          
+          I bridge the gap between hardware control, AI perception, and software services to create practical, working robots.
+        skills:
+          enable: true
+          title: "Core Technologies:"
+          items:
+            - "ROS 2 (Foxy/Humble)"
+            - "Python & C++"
+            - "Nav2 & Manipulation"
+            - "Computer Vision (YOLO/OpenCV)"
+            - "Deep Learning (PyTorch)"
+            - "IoT & Embedded (ESP32)"
+            - "Linux & Docker"
+            - "AWS & MySQL"
+            - "Communication (TCP/REST/Serial)"
 
-      - title: "School of Electrical Engineering"
-        school:
-          name: "KAIST"
-          icon: "/images/kaist.gif"
-        date: "2018.03 - 2025.02 (Leave of Absence)"
+      projects:
+        enable: true
+        title: "Key Projects"
+        items:
+          - title: "Shopee: Robot Shopping System"
+            content: "A multi-robot autonomous shopping system. Robots navigate shelves, pick items, and deliver them. Features ROS2 architecture, FSM-based coordination, and central server management."
+            image: /images/projects/shopee_banner.jpg
+            badges:
+              - "ROS 2"
+              - "Nav2"
+              - "Multi-Robot"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/jinhyuk2me/Shopee
+
+          - title: "Roomie: Hotel Delivery Robot"
+            content: "Autonomous room service robot capable of riding elevators and precise item delivery. Integrated with guests/staff GUIs and an IoT-controlled drawer system."
+            image: /images/projects/roomie_banner.png
+            badges:
+              - "ROS 2"
+              - "IoT (ESP32)"
+              - "PyQt"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/jinhyuk2me/Roomie
+
+          - title: "FALCON: Airport Safety AI"
+            content: "Real-time bird strike and FOD detection system using Synthetic Data (Unity/Blender) to overcome data scarcity. Features 3D coordinate mapping and risk assessment."
+            image: /images/projects/falcon_banner.png
+            badges:
+              - "AI/CV"
+              - "Unity/Blender"
+              - "YOLOv8"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/jinhyuk2me/FALCON
+
+          - title: "Bikecast: Demand Forecasting"
+            content: "Data-driven demand forecasting and station recommendation system for public bicycles using XGBoost. Analyzed weather, transit, and spatial data."
+            image: /images/projects/bikecast_banner.png
+            badges:
+              - "Data Analysis"
+              - "XGBoost"
+              - "Pandas"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/jinhyuk2me/Bikecast
+
+          - title: "DUST: Smart Logistics Control"
+            content: "IoT-based logistics control platform coordinating AGVs, conveyors, and gates. Designed a centralized server with a robust FSM and custom communication protocols."
+            image: /images/projects/dust_banner.png
+            badges:
+              - "IoT"
+              - "FSM"
+              - "TCP/IP"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/jinhyuk2me/DUST
+
+      experience:
+        enable: true
+        title: "Work Experience"
+        items:
+          - company: "LK ROBOTICS"
+            jobs:
+              - name: "Embedded AI Engineer"
+                date: "2025.10 - 2025.12"
+                content: |
+                  - Developed **PyroVision**, an early fire detection system using **NXP i.MX8M Plus** NPU.
+                  - Implemented **RGB-IR Sensor Fusion** algorithm to minimize false positives from smoke/fog.
+                  - Optimized **YOLOv8** & **TensorFlow Lite** models for edge inference on embedded devices.
+                  - Built real-time monitoring infrastructure using **TCP/IP**, **GStreamer**, and **PyQt6**.
+
+      education:
+        enable: true
+        title: "Education"
+        items:
+          - title: "ROS2 & AI Autonomous Robot Course"
+            school:
+              name: "Addinedu"
+              icon: "/images/addinedu.webp"
+            date: "2025.02 - 2025.08"
+            content: |-
+              Intensive training on ROS2, Autonomous Driving, Deep Learning, and Embedded Systems.
+              Successfully completed 5 major projects as a Team Lead.
+
+          - title: "School of Electrical Engineering"
+            school:
+              name: "KAIST"
+              icon: "/images/kaist.gif"
+            date: "2018.03 - 2025.02 (Leave of Absence)"
+            content: |-
+              Undergraduate studies in Electrical Engineering.
+
+      contact:
+        enable: true
+        content: "Open to new opportunities in Robotics and AI."
+        btnName: "Email Me"
+        btnLink: "mailto:jinhyuk2me@gmail.com"
+
+      footer:
+        recentPosts:
+          enable: false
+        socialNetworks:
+          github: https://github.com/jinhyuk2me
+
+  ko:
+    languageName: "한국어"
+    weight: 2
+    params:
+      title: "장진혁"
+      description: "풀스택 로보틱스 & AI 시스템 아키텍트"
+      favicon: "/fav.png"
+      useBootstrapCDN: true
+      mathjax: false
+      animate: true
+      
+      theme:
+        # defaultTheme: "dark"
+      
+      font:
+        fontSize: 1rem
+        fontWeight: 400
+        lineHeight: 1.5
+        textAlign: left
+
+      navbar:
+        align: ms-auto
+        brandName: "장진혁 포트폴리오"
+        disableSearch: true
+        stickyNavBar:
+          enable : true
+          showOnScrollUp : true
+        enableSeparator: false
+        menus:
+          disableAbout: false
+          disableExperience: false
+          disableEducation: false
+          disableProjects: false
+          disableAchievements: true
+          disableContact: false
+
+      hero:
+        enable: true
+        intro: "안녕하세요, 저는"
+        title: "장진혁입니다."
+        subtitle: "Full-Stack Robotics & AI System Architect"
+        content: "하위 레벨의 로봇 제어부터 AI 인지, 그리고 중앙 관제 서버까지. 하나의 완전한 자율주행 시스템을 설계하고 구현합니다."
+        image: /images/me.png
+        bottomImage:
+          enable: true
+        button:
+          enable: true
+          name: "프로젝트 보기"
+          url: "#projects"
+          download: false
+          newPage: false
+        socialLinks:
+          fontAwesomeIcons:
+            - icon: fab fa-github
+              url: https://github.com/jinhyuk2me
+            - icon: fab fa-linkedin
+              url: https://linkedin.com/in/jinhyuk2me
+
+      about:
+        enable: true
+        title: "About Me"
         content: |-
-          Undergraduate studies in Electrical Engineering.
+          저는 바닥부터 전체 시스템을 쌓아올릴 수 있는 **풀스택 로보틱스 엔지니어**입니다.
+          특히 **시스템 아키텍처 설계** (ROS2, FSM, DB)와 **고난이도 문제 해결** (합성 데이터, 멀티 로봇 관제)에 강점이 있습니다.
 
-  # Contact
-  contact:
-    enable: true
-    content: "Open to new opportunities in Robotics and AI."
-    btnName: "Email Me"
-    btnLink: "mailto:jinhyuk2me@gmail.com"
+          하드웨어 제어와 AI 인지, 그리고 소프트웨어 서비스를 연결하여, 실험실이 아닌 현실에서 작동하는 로봇을 만듭니다.
+        skills:
+          enable: true
+          title: "핵심 기술:"
+          items:
+            - "ROS 2 (Foxy/Humble)"
+            - "Python & C++"
+            - "Nav2 & Manipulation"
+            - "Computer Vision (YOLO/OpenCV)"
+            - "Deep Learning (PyTorch)"
+            - "IoT & Embedded (ESP32)"
+            - "Linux & Docker"
+            - "AWS & MySQL"
+            - "Communication (TCP/REST/Serial)"
 
-  footer:
-    recentPosts:
-      enable: false
-    socialNetworks:
-      github: https://github.com/jinhyuk2me
+      projects:
+        enable: true
+        title: "주요 프로젝트"
+        items:
+          - title: "Shopee: 로봇 쇼핑 시스템"
+            content: "다중 자율주행 로봇 쇼핑 시스템입니다. 로봇들이 직접 진열대로 이동해 물건을 픽업하고 배달합니다. ROS2 아키텍처와 FSM 기반 관제, 중앙 서버 제어가 포함되어 있습니다."
+            image: /images/projects/shopee_banner.jpg
+            badges:
+              - "ROS 2"
+              - "Nav2"
+              - "Multi-Robot"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/jinhyuk2me/Shopee
 
+          - title: "Roomie: 호텔 배송 로봇"
+            content: "엘리베이터 탑승과 정밀한 물품 배송이 가능한 자율주행 룸서비스 로봇입니다. 고객/직원용 GUI 및 IoT 서랍 제어 시스템과 연동됩니다."
+            image: /images/projects/roomie_banner.png
+            badges:
+              - "ROS 2"
+              - "IoT (ESP32)"
+              - "PyQt"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/jinhyuk2me/Roomie
+
+          - title: "FALCON: 공항 안전 AI"
+            content: "실시간 조류 충돌(Bird Strike) 및 FOD 탐지 시스템입니다. 데이터 부족 문제를 해결하기 위해 Unity/Blender 기반 합성 데이터를 활용했으며, 3D 좌표 매핑 및 위험도 평가 기능을 갖췄습니다."
+            image: /images/projects/falcon_banner.png
+            badges:
+              - "AI/CV"
+              - "Unity/Blender"
+              - "YOLOv8"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/jinhyuk2me/FALCON
+
+          - title: "Bikecast: 자율주행 수요 예측"
+            content: "공공 자전거(따릉이) 수요 예측 및 거치소 추천 시스템입니다. 날씨, 대중교통, 지리적 데이터를 종합하여 XGBoost 기반 수요 예측 모델을 개발했습니다."
+            image: /images/projects/bikecast_banner.png
+            badges:
+              - "Data Analysis"
+              - "XGBoost"
+              - "Pandas"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/jinhyuk2me/Bikecast
+
+          - title: "DUST: 스마트 물류 관제"
+            content: "AGV, 컨베이어 벨트, 차단기를 통합 제어하는 IoT 물류 관제 플랫폼입니다. 견고한 FSM과 커스텀 통신 프로토콜을 갖춘 중앙 서버를 설계했습니다."
+            image: /images/projects/dust_banner.png
+            badges:
+              - "IoT"
+              - "FSM"
+              - "TCP/IP"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/jinhyuk2me/DUST
+
+      experience:
+        enable: true
+        title: "경력 사항"
+        items:
+          - company: "LK ROBOTICS"
+            jobs:
+              - name: "임베디드 AI 엔지니어"
+                date: "2025.10 - 2025.12"
+                content: |
+                  - **NXP i.MX8M Plus** NPU 기반 초기 화재 감지 시스템 **PyroVision** 개발.
+                  - 오탐지 최소화를 위한 **RGB-IR 센서 퓨전** 알고리즘 구현.
+                  - 엣지 디바이스 추론을 위한 **YOLOv8** 및 **TensorFlow Lite** 모델 최적화.
+                  - **TCP/IP**, **GStreamer**, **PyQt6**를 활용한 실시간 모니터링 인프라 구축.
+
+      education:
+        enable: true
+        title: "학력"
+        items:
+          - title: "ROS2 & AI 자율주행 로봇 과정"
+            school:
+              name: "애드인에듀"
+              icon: "/images/addinedu.webp"
+            date: "2025.02 - 2025.08"
+            content: |-
+              ROS2, 자율주행, 딥러닝, 임베디드 시스템 집중 교육 과정.
+              팀 리더로서 5개의 주요 프로젝트 성공적 완수.
+
+          - title: "전기및전자공학부"
+            school:
+              name: "KAIST"
+              icon: "/images/kaist.gif"
+            date: "2018.03 - 2025.02 (휴학)"
+            content: |-
+              전기및전자공학부 학부 과정.
+
+      contact:
+        enable: true
+        content: "로보틱스 및 AI 분야의 새로운 기회를 찾고 있습니다."
+        btnName: "이메일 보내기"
+        btnLink: "mailto:jinhyuk2me@gmail.com"
+
+      footer:
+        recentPosts:
+          enable: false
+        socialNetworks:
+          github: https://github.com/jinhyuk2me
