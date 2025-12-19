@@ -68,7 +68,7 @@ params:
     title: "Jinhyuk Jang."
     subtitle: "Full-Stack Robotics & AI System Architect"
     content: "I design and build complete autonomous systems—from low-level robot control to AI perception and central management servers."
-    image: /images/hero.svg
+    image: /images/me.png
     bottomImage:
       enable: true
     button:
