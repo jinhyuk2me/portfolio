@@ -195,7 +195,7 @@
                         </a>
                         <div class="dropdown-menu shadow-lg rounded" aria-labelledby="languageDropdown">
                             {{ range .AllTranslations }}
-                            <a class="dropdown-item text-center nav-link" href="{{ .Permalink }}">
+                            <a class="dropdown-item text-center nav-link" href="{{ .RelPermalink }}">
                                 {{ if eq .Lang "ko" }}🇰🇷 Korean{{ else }}🇺🇸 English{{ end }}
                             </a>
                             {{ end }}
