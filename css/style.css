@@ -482,11 +482,6 @@ section {
 }
 
 @media (max-width: 768px) {
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
     .hero-title {
         font-size: 40px;
     }
