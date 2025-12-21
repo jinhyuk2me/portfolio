@@ -62,6 +62,12 @@ languages:
           disableAchievements: true
           disableContact: false
 
+      menu:
+        main:
+          - name: "Resume"
+            url: "https://jinhyuk2me.github.io/resume"
+            weight: 100
+
       hero:
         enable: true
         intro: "Hello, I am"
@@ -149,7 +155,7 @@ languages:
                 url: https://github.com/jinhyuk2me/FALCON
 
           - title: "Bikecast: Demand Forecasting"
-            content: "Bike-sharing demand forecasting analyzing 44M trip records with XGBoost. Optimized query performance from hours to minutes using indexing. Achieved R²=0.761 with 3-stage learning for data imbalance."
+            content: "Bike-sharing demand forecasting analyzing 44M trip records with XGBoost. Optimized query performance from hours to tens of seconds using indexing. Achieved R²=0.761 with 3-stage learning for data imbalance."
             image: /images/projects/bikecast_banner.png
             badges:
               - "Data Analysis"
@@ -229,6 +235,7 @@ languages:
           enable: false
         socialNetworks:
           github: https://github.com/jinhyuk2me
+          linkedin: https://linkedin.com/in/jinhyuk2me
           youtube: https://www.youtube.com/@i-like-robot-sw
 
   ko:
@@ -267,6 +274,12 @@ languages:
           disableAchievements: true
           disableContact: false
 
+      menu:
+        main:
+          - name: "이력서"
+            url: "https://jinhyuk2me.github.io/resume"
+            weight: 100
+
       hero:
         enable: true
         intro: "Jinhyuk Jang"
@@ -294,7 +307,7 @@ languages:
       about:
         enable: true
         image: /images/my.jpg
-        title: "About Me"
+        title: "자기소개"
         content: |-
           시스템 설계부터 AI까지 전체 스택을 다루는 풀스택 로보틱스 엔지니어입니다.
           하드웨어 제어, AI 인지, 소프트웨어 서비스를 연결하여 실험실이 아닌 실제 환경에서 작동하는 로봇을 만듭니다.
@@ -434,4 +447,5 @@ languages:
           enable: false
         socialNetworks:
           github: https://github.com/jinhyuk2me
+          linkedin: https://linkedin.com/in/jinhyuk2me
           youtube: https://www.youtube.com/@i-like-robot-sw
