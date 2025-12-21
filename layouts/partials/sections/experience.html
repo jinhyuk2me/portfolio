@@ -1,0 +1,27 @@
+<section id="experience" class="experience-section">
+    <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+
+        <div class="experience-list">
+            {{ range .Site.Params.experience.items }}
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="company-name">{{ .company }}</h3>
+                </div>
+
+                {{ range .jobs }}
+                <div class="job-role">
+                    <div class="job-meta">
+                        <span class="job-title">{{ .name }}</span>
+                        <span class="job-date">{{ .date }}</span>
+                    </div>
+                    <div class="job-desc">
+                        {{ .content | markdownify }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

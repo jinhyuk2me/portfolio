@@ -1,6 +1,6 @@
 baseURL: "https://jinhyuk2me.github.io/portfolio/"
 title: "Jinhyuk Jang Portfolio"
-theme: hugo-profile
+# theme: hugo-profile
 canonifyURLs: true
 
 defaultContentLanguage: en

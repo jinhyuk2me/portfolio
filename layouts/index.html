@@ -1,22 +1,22 @@
-{{ define "head" }}
-<meta name="description" content={{ .Site.Params.description }}>
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/index.css" media="all">
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/projects.css" media="all">
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
 
-<!-- fontawesome -->
-<script defer src="{{ .Site.Params.staticPath }}/fontawesome-6/all-6.4.2.js"></script>
-{{ end }}
+<head>
+    {{ partial "head.html" . }}
+</head>
 
-{{ define "title" }}
-{{ .Site.Title }}
-{{ end }}
+<body>
+    {{ partial "header.html" . }}
 
-{{ define "main" }}
-{{- partial "sections/hero/index.html" . -}}
-{{- partial "sections/projects.html" . -}}
-{{- partial "sections/about.html" . -}}
-{{- partial "sections/education.html" . -}}
-{{- partial "sections/experience.html" . -}}
-{{- partial "sections/achievements.html" . -}}
-{{- partial "sections/contact.html" . -}}
-{{ end }}
+    <main>
+        {{ partial "sections/hero.html" . }}
+        {{ partial "sections/about.html" . }}
+        {{ partial "sections/experience.html" . }}
+        {{ partial "sections/projects.html" . }}
+        {{ partial "sections/contact.html" . }}
+    </main>
+
+    {{ partial "footer.html" . }}
+</body>
+
+</html>
