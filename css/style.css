@@ -358,9 +358,74 @@ section {
 
 .about-text p {
     color: var(--text-secondary);
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
     font-size: 1.1rem;
     line-height: 1.7;
+}
+
+/* Education Section within About */
+.education-integrated {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.section-subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.edu-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 1.2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.edu-item:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(47, 129, 247, 0.2);
+}
+
+.edu-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.edu-details {
+    flex: 1;
+}
+
+.edu-school {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.2rem;
+}
+
+.edu-degree {
+    font-size: 0.95rem;
+    color: var(--accent-cyan);
+    margin-bottom: 0.2rem;
+}
+
+.edu-meta {
+    font-family: var(--font-code);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    opacity: 0.8;
 }
 
 .tech-stack-title {
