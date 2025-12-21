@@ -29,6 +29,11 @@ languages:
   en:
     languageName: "English"
     weight: 1
+    menu:
+      main:
+        - name: "Resume"
+          url: "https://jinhyuk2me.github.io/resume"
+          weight: 100
     params:
       title: "Jinhyuk Jang"
       description: "Full-Stack Robotics & AI System Architect"
@@ -61,12 +66,6 @@ languages:
           disableProjects: false
           disableAchievements: true
           disableContact: false
-
-      menu:
-        main:
-          - name: "Resume"
-            url: "https://jinhyuk2me.github.io/resume"
-            weight: 100
 
       hero:
         enable: true
@@ -241,6 +240,11 @@ languages:
   ko:
     languageName: "한국어"
     weight: 2
+    menu:
+      main:
+        - name: "이력서"
+          url: "https://jinhyuk2me.github.io/resume"
+          weight: 100
     params:
       title: "장진혁"
       description: "풀스택 로보틱스 & AI 시스템 아키텍트"
@@ -273,12 +277,6 @@ languages:
           disableProjects: false
           disableAchievements: true
           disableContact: false
-
-      menu:
-        main:
-          - name: "이력서"
-            url: "https://jinhyuk2me.github.io/resume"
-            weight: 100
 
       hero:
         enable: true
