@@ -272,6 +272,23 @@ ul {
     gap: 1rem;
 }
 
+.hero-social {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.hero-social a {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    transition: all 0.2s ease;
+}
+
+.hero-social a:hover {
+    color: var(--accent-cyan);
+    transform: scale(1.15);
+}
+
 /* Hero Image */
 .hero-image-container {
     flex: 1;
