@@ -354,6 +354,7 @@ section {
     grid-template-columns: 3fr 2fr;
     gap: 5rem;
     align-items: start;
+    margin-bottom: 4rem;
 }
 
 .about-text p {
@@ -363,17 +364,23 @@ section {
     line-height: 1.7;
 }
 
-/* Education Section within About */
-.education-integrated {
-    margin-top: 2.5rem;
-    padding-top: 2.5rem;
+/* Education Section - Full Width */
+.education-section {
+    margin-top: 3rem;
+    padding-top: 3rem;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 
 .section-subtitle {
     font-size: 1.3rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     color: var(--text-primary);
     display: flex;
     align-items: center;
@@ -383,23 +390,24 @@ section {
 .edu-item {
     display: flex;
     align-items: flex-start;
-    gap: 1.2rem;
-    margin-bottom: 2rem;
-    padding: 1.2rem;
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
     transition: all 0.3s ease;
 }
 
 .edu-item:hover {
-    background: rgba(255, 255, 255, 0.04);
-    border-color: rgba(47, 129, 247, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(47, 129, 247, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .edu-logo {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -409,23 +417,22 @@ section {
 }
 
 .edu-school {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.4rem;
 }
 
 .edu-degree {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: var(--accent-cyan);
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.4rem;
 }
 
-.edu-meta {
+.edu-date {
     font-family: var(--font-code);
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: var(--text-secondary);
-    opacity: 0.8;
 }
 
 .tech-stack-title {
