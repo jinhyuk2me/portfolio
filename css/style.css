@@ -497,9 +497,72 @@ section {
     transform: translateY(-2px);
 }
 
+/* Mobile Header Styles */
+@media (max-width: 968px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .main-nav ul {
+        gap: 1.2rem;
+    }
+
+    .main-nav a {
+        font-size: 0.85rem;
+    }
+
+    .btn {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.85rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .site-header {
+        height: 56px;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .main-nav ul {
+        gap: 0.8rem;
+    }
+
+    .main-nav a {
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.75rem;
+    }
+
     .hero-title {
         font-size: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .main-nav ul {
+        gap: 0.5rem;
+    }
+
+    .main-nav a {
+        font-size: 0.7rem;
+    }
+
+    .btn-outline {
+        display: none;
     }
 }
 
